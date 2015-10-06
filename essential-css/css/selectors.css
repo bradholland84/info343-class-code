@@ -14,3 +14,57 @@
     - margins and padding
     - borders
 */
+
+body {
+    font-family: Lato, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+h1 {
+    margin-top: 0;
+}
+
+h1, h2 {
+    font-weight: 300;
+}
+
+.subtitle {
+    font-size: 200%;
+    font-weight: 300;
+}
+
+.term {
+    font-style: italic;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover, a:focus {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    border-top-width: 5px;
+    border-top-color: #0df;
+    border-top-style: solid;
+}
+
+/* this is a descendant selector */
+footer a { 
+    color: #ddf;
+}
+
+footer a:hover, footer a:focus {
+    color: #fff;
+}
+
+header {
+    background-color: #CCC;
+    padding-left: 1em;
+    padding-right: 1em;
+
+}
