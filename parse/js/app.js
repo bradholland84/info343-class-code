@@ -1,0 +1,3 @@
+/*
+    script for the index.html file
+*/

@@ -1,0 +1,13 @@
+
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    color: #333;
+    padding: 1em;
+    margin: 0;
+}
+
+a {
+    color: #337ab7;
+}

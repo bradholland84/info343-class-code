@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+        <link href='https://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="icon" href="img/angular.ico">
+        <title>Welcome To Angular</title>
+
+        <!-- angular script file -->
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
+
+        <!-- our script file -->
+        <script src="js/intro.js"></script>
+
+    </head>
+    <body>
+        <main class="container" ng-app="AngularIntro">
+            <section ng-controller="NameController">
+                <h1>Welcome to Angular!</h1>
+                <div class="form-group">
+                    <label for="name-input">Please enter your name:</label>
+                    <input type="text" id="name-input" class="form-control" ng-model="name"
+                        placeholder="enter your name" autofocus>
+                </div>
+                <p class="lead" ng-if="name">Hello {{name}}!</p>
+            </section>
+        </main>
+
+    </body>
+</html>
