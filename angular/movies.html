@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -16,7 +17,31 @@
         <script src="js/movies.js"></script>
 
     </head>
-    <body>
+    <body class="container" ng-app="Movies" ng-controller="MoviesController">
+        <h1>Movies from 2014</h1>
 
+        <p>
+            <input type="search" class="form-control"
+                   placeholder="type to filter" ng-model="query"/>
+        </p>
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Rating</th>
+                    <th>Released</th>
+                    <th>Gross Sales</th>
+                </tr>
+            </thead>
+            <tbody>
+            <tr ng-repeat="movie in movies | filter: {title: query}">
+                <td>{{movie.title}}</td>
+                <td>{{movie.rating}}</td>
+                <td>{{movie.released | date: 'MMM d'}}</td>
+                <td>{{movie.gross | currency}}</td>
+            </tr>
+            </tbody>
+        </table>
     </body>
 </html>

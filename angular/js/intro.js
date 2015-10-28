@@ -33,5 +33,5 @@ angular.module('AngularIntro', [])
         //try changing this value to something else, and refresh
         //the page to see how the default value of the model is
         //automatically shown in the view on page load
-        $scope.name = null;
+        $scope.name = 'Brad';
     });
