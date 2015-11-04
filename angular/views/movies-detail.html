@@ -1,1 +1,29 @@
+<<<<<<< HEAD
 <h1>{{movie.title}}</h1>
+=======
+<div class="row">
+    <div class="col-sm-4 col-sm-push-8">
+        <img class="img-responsive" ng-src="{{posterUrl}}" alt="movie poster"/>
+    </div>
+    <div class="col-sm-8 col-sm-pull-4">
+        <h1>{{movie.title}}</h1>
+
+        <p>{{movie.genre}} movie from {{movie.distributor}}, rated {{movie.rating}}</p>
+
+        <div class="row">
+            <div class="col-xs-2"><strong>Release Date:</strong></div>
+            <div class="col-xs-10">{{movie.released | date : 'MMM d, yyyy'}}</div>
+        </div>
+        <div class="row">
+            <div class="col-xs-2"><strong>Tickets Sold:</strong></div>
+            <div class="col-xs-10">{{movie.tickets | number}}</div>
+        </div>
+        <div class="row">
+            <div class="col-xs-2"><strong>Gross Revenues:</strong></div>
+            <div class="col-xs-10">{{movie.gross | currency : '$' : 0}}</div>
+        </div>
+
+        <p class="back-to-list"><a href="#/movies">&leftarrow; back to list</a></p>
+    </div>
+</div>
+>>>>>>> 0e1f3c03a332ce37c172bdee43ad742a11ba4994

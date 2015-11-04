@@ -4,6 +4,7 @@ body {
     font-size: 18px;
 }
 
+<<<<<<< HEAD
 .completed-task {
     color: #AAA;
     text-decoration: line-through;
@@ -11,4 +12,8 @@ body {
 
 ul li {
     cursor: pointer;
+=======
+.back-to-list {
+    margin-top: 1.5em;
+>>>>>>> 0e1f3c03a332ce37c172bdee43ad742a11ba4994
 }
