@@ -1,0 +1,22 @@
+body {
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+h1, h2, h3 {
+    font-family: 'Open Sans Condensed', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 300;
+}
+
+.messages {
+    padding-left: 0;
+}
+
+.messages li {
+    list-style: none;
+    border: 1px solid #DDD;
+    border-radius: 5px;
+    padding: 1em;
+    margin-bottom: 0.5em;
+}
