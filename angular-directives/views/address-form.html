@@ -1,0 +1,75 @@
+<form name="addressForm">
+    <!--street address line 1 and 2-->
+    <div class="form-group">
+        <label for="street1Inp">Address</label>
+        <input type="text"
+               id="street1Inp"
+               name="street1Inp"
+               class="form-control"
+               ng-model="address.street1"
+               placeholder="street address"
+               required/>
+        <input type="text"
+               id="street2Inp"
+               name="street2Inp"
+               class="form-control"
+               ng-model="address.street2"/>
+
+        <p class="validation-error" ng-if="addressForm.street1Inp.$touched && addressForm.street1Inp.$error.required">
+            Please supply a street address
+        </p>
+    </div>
+
+    <!--city-->
+    <div class="form-group">
+        <label for="cityInp">City</label>
+        <input type="text"
+               id="cityInp"
+               name="cityInp"
+               class="form-control"
+               ng-model="address.city"
+               placeholder="city" required/>
+
+        <p class="validation-error" ng-if="addressForm.cityInp.$touched && addressForm.cityInp.$error.required">
+            Please enter your city
+        </p>
+    </div>
+
+    <!--state select-->
+    <div class="form-group">
+        <label for="stateSel">State</label>
+        <select id="stateSel"
+                name="stateSel"
+                class="form-control"
+                ng-model="address.state"
+                required>
+            <option value="">(please select a state)</option>
+            <option ng-repeat="state in states" ng-value="state.abbreviation">{{state.name}}</option>
+        </select>
+
+        <p class="validation-error" ng-if="addressForm.stateSel.$touched && addressForm.stateSel.$error.required">
+            Please select your state
+        </p>
+    </div>
+
+    <!--zip-->
+    <div class="form-group">
+        <label for="zipInp">Zip:</label>
+        <input type="text"
+               id="zipInp"
+               name="zipInp"
+               class="form-control"
+               ng-model="address.zip"
+               placeholder="zip code"
+               required
+               pattern="\d{5}(-\d{4})?"/>
+
+        <p class="validation-error" ng-if="addressForm.zipInp.$touched && addressForm.zipInp.$error.required">
+            Please enter your zip code
+        </p>
+        <p class="validation-error" ng-if="addressForm.zipInp.$touched && addressForm.zipInp.$error.pattern">
+            Zip codes must be like 'xxxxx' or 'xxxxx-xxxx'
+        </p>
+    </div>
+</form>
+

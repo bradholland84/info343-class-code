@@ -1,0 +1,22 @@
+body {
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+h1, h2, h3 {
+    font-family: 'Open Sans Condensed', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 300;
+}
+
+form .ng-dirty.ng-invalid {
+    border: 1px solid #DD0000;
+}
+
+form .ng-dirty.ng-valid {
+    border: 1px solid #00DD00;
+}
+
+.validation-error {
+    color: #DD0000;
+}

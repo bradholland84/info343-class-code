@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+
+        <title>Contacts</title>
+
+        <!--Bootstrap css, using integrity attr to ensure correct content was downloaded -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+
+        <!--Open Sans Condensed font for headings-->
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+
+        <!--Open Sans normal and light for body text-->
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+
+        <!--our stylesheet-->
+        <link rel="stylesheet" href="css/main.css">
+
+        <!-- angular script file -->
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
+
+        <!--list of USA states-->
+        <script src="js/usa-states.js"></script>
+
+        <!-- our script file -->
+        <script src="js/app.js"></script>
+
+    </head>
+    <body>
+        <main class="container" ng-app="DirectivesDemo" ng-controller="OrderFormController">
+            <h1>Order Form</h1>
+            <p>
+                This is an example of how to use directives with isolate scopes.
+                The Bill To and Ship To forms are copies of the same directive
+                but they have separate scopes from each other. Although the forms
+                have the same name, their scopes are separated, so the validation
+                states are kept separate from one another.
+            </p>
+
+            <h2>Bill To</h2>
+            <address-form address="billTo" states="states"></address-form>
+
+            <h2>Ship To</h2>
+            <address-form address="shipTo" states="states"></address-form>
+
+            <h2>Models</h2>
+            <p>
+                As you fill out the form, this will show you what the models look like.
+                Note that field values are not set on the model until the field is valid.
+            </p>
+
+            <pre>$scope.billTo == {{billTo | json}}</pre>
+
+            <pre>$scope.shipTo == {{shipTo | json}}</pre>
+        </main>
+    </body>
+</html>
