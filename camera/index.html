@@ -6,11 +6,23 @@
         <link rel="stylesheet" href="css/main.css">
     </head>
     <body>
+    <p>
+        <label for="line-color-inp">Line Color:</label>
+        <input type="color" name="line-color-inp" id="line-color-inp" value="#000000">
+    </p>
+    <p>
+        <label for="line-size-inp">Line Size:</label>
+        <input type="range" name="line-size-inp" value="1" id="line-size-inp" min="1" max="50"/>
+    </p>
         <p>
             <video autoplay></video>
         </p>
         <p>
             <canvas></canvas>
+        </p>
+        <p>
+            <button id="btn-snapshot">Take Snapshot!</button>
+            <img src="" alt="snapshot of canvas"/>
         </p>
 
         <script src="js/app.js"></script>    
