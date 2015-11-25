@@ -1,0 +1,79 @@
+
+
+body, html {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+#map {
+    height: 100%
+}
+
+#slider {
+    background-color: #E6E6E6;
+    padding: 10px;
+    box-shadow: -10px 0 15px -6px #585858 inset;
+}
+
+#traffic-pic {
+    width: 250px;
+}
+
+#camera-title {
+    margin-top: 36px;
+    font-size: 22px;
+    text-align: center;
+}
+
+#owner {
+    margin: 16px;
+    text-align: center;
+}
+
+#arrow {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 8px;
+    cursor: pointer;
+}
+
+#filter-box {
+    width: inherit;
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 48px;
+}
+
+#camera-filter {
+    width: 250px;
+}
+
+#SDOT {
+    color: blue;
+}
+
+#WSDOT {
+    color: red;
+}
+
+#cam-header {
+    text-align: center;
+}
+
+#info {
+    text-align: center;
+    position: relative;
+    color: white;
+    bottom: 0;
+    left: 0;
+    font-size: 22px;
+    background: rgba(0,0,0,0.5);
+}
